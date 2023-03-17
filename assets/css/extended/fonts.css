@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Source-Serif-SC";
+    src: url("/fonts/NotoSerifSC-Medium.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Linux-Libertine";
+    src: url("/fonts/LinLibertine_RZ.otf") format("truetype");
+}
+
+
+body {
+    font-family: Source-Serif-SC, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+.post-content pre, code {
+    font-family: Linux-Libertine, sans-serif;
+    max-height: 40rem;
+}
