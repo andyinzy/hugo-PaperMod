@@ -6,7 +6,7 @@
 /* --- home 图标 --- */
 
 .logo a:hover {
-    transition: 0.35s;
+    transition: 0.25s;
     color: grey;
 }
 
@@ -27,7 +27,7 @@
 /* --- menu 链接 --- */
 
 #menu a:hover {
-    transition: 0.15s;
+    transition: 0.25s;
     color: grey;
 }
 
