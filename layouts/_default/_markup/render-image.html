@@ -1,1 +1,10 @@
-<img loading="lazy" src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}" {{ end }} />
+<!-- 两个功能： -->
+<!-- 1. 懒加载 2.添加图片标题 wip -->
+
+
+<figure>
+    <center>
+        <img loading="lazy" src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}" {{ end }} />
+    <figcaption>{{ .Text }}</figcaption>
+    </center>
+</figure>
