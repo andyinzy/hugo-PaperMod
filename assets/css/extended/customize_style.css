@@ -120,3 +120,16 @@
     color: var(--secondary);
 }
 
+/* 调整行间距 */
+.post-content {
+    line-height: 2em;
+}
+
+/* 调整图片题注 */
+.post-content figcaption {
+    font-family: "Noto Serif SC", sans-serif;
+    color: #676767;
+    font-size: 0.9em;
+    font-weight: normal;
+    margin: 8px 0 16px;
+}

@@ -1,23 +1,86 @@
 @font-face {
-    font-family: "Source-Serif-SC";
-    src: url("/fonts/NotoSerifSC-Medium.otf") format("truetype");
+    font-family: "Ysabeau";
+    src: url("/fonts/YsabeauOffice_Medium.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Linux-Libertine";
-    src: url("/fonts/LinLibertine_RZ.otf") format("truetype");
+    font-family: "LXGWBright";
+    src: url("/fonts/LXGWBright_Medium.woff2") format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: auto;
 }
 
 
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: auto;
+}
+
+
+/* post字体，主要字体 */
 body {
-    font-family: Source-Serif-SC, sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-family: "Ysabeau", "LXGWBright", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.2em;
     margin: 0;
 }
 
 
-.post-content pre, code {
-    font-family: Linux-Libertine, sans-serif;
+/* 小代码块字体 */
+.post-content code {
+    /* default margin: auto 4px;
+    padding: 4px 6px;
+    font-size: 0.78em;
+    line-height: 1.5;
+    background: var(--code-bg);
+    border-radius: 2px; */
+    font-family: "Ysabeau", "LXGWBright", sans-serif;
+    margin: 1px 5px;
+    padding: 1px 5px;
+    font-size: 1.1em !important;
+    line-height: 1.1em;
+    background: var(--code-bg);
+    border-radius: 4px;
+}
+
+
+/* 大代码块字体 */
+.post-content pre code {
+    font-family: "JetBrains Mono", sans-serif;
+    font-size: 0.9em !important;
     max-height: 40rem;
+}
+
+/* Not used */
+/* .post-content p {
+    font-family: "LXGWBright", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+} */
+
+/* 数学公式字体 */
+.katex-html {
+    font-family: "LXGW WenKai", sans-serif;
+    font-size: 0.9em !important;
+    text-indent: 0;
+    text-rendering: auto;
+}
+
+/* 目录字体 */
+.toc {
+    font-family: "Noto Serif SC", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+/* 顶部导航栏字体 */
+.nav {
+    font-family: "Noto Serif SC", sans-serif;
 }
