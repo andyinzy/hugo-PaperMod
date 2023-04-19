@@ -3,9 +3,17 @@
     src: url("/fonts/YsabeauOffice_Medium.ttf") format("truetype");
 }
 
-@font-face {
+/* @font-face {
     font-family: "LXGWBright";
     src: url("/fonts/LXGWBright_Medium.woff2") format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: auto;
+} */
+
+@font-face {
+    font-family: "Linux Libertine";
+    src: url("/fonts/LinLibertine_R.ttf") format("truetype");
     font-weight: 200;
     font-style: normal;
     font-display: auto;
@@ -24,7 +32,7 @@
 
 /* post字体，主要字体 */
 body {
-    font-family: "Ysabeau", "LXGWBright", sans-serif;
+    font-family: "Ysabeau", "LXGW WenKai", sans-serif;
     font-size: 1.1rem;
     line-height: 1.2em;
     margin: 0;
@@ -39,7 +47,7 @@ body {
     line-height: 1.5;
     background: var(--code-bg);
     border-radius: 2px; */
-    font-family: "Ysabeau", "LXGWBright", sans-serif;
+    font-family: "Ysabeau", "LXGW WenKai", sans-serif;
     margin: 1px 5px;
     padding: 1px 5px;
     font-size: 1.1em !important;
@@ -74,7 +82,7 @@ body {
 
 /* 目录字体 */
 .toc {
-    font-family: "Noto Serif SC", sans-serif;
+    font-family: "Linux Libertine", "Noto Serif SC", sans-serif;
     font-size: 1rem;
     line-height: 1.5em;
     margin: 0;
@@ -82,5 +90,5 @@ body {
 
 /* 顶部导航栏字体 */
 .nav {
-    font-family: "Noto Serif SC", sans-serif;
+    font-family: "Linux Libertine", "Noto Serif SC", sans-serif;
 }
