@@ -74,7 +74,7 @@ body {
 
 /* 数学公式字体 */
 .katex-html {
-    font-family: "LXGW WenKai", sans-serif;
+    font-family: "Ysabeau", "LXGW WenKai", sans-serif;
     font-size: 0.9em !important;
     text-indent: 0;
     text-rendering: auto;
