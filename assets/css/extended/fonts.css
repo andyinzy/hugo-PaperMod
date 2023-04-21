@@ -3,13 +3,13 @@
     src: url("/fonts/YsabeauOffice_Medium.ttf") format("truetype");
 }
 
-/* @font-face {
-    font-family: "LXGWBright";
-    src: url("/fonts/LXGWBright_Medium.woff2") format('woff2');
-    font-weight: 200;
+@font-face {
+    font-family: "Noto Serif SC";
+    src: url("/fonts/noto-serif-sc-chinese-simplified-500-normal.woff2") format('woff2');
+    font-weight: 500;
     font-style: normal;
     font-display: auto;
-} */
+}
 
 @font-face {
     font-family: "Linux Libertine";
