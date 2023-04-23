@@ -22,17 +22,75 @@
     flex-wrap: inherit;
 }
 
+
+/* -------------- home 图标hover修改 ---------------- */
+
+.logo {
+	background: rgba(149,165,166,0.4);
+}
+
 .logo a {
+	padding: 0 0.25em;
     font-size: 24px;
     font-weight: 700;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
 }
+
+.logo a:hover,
+.logo a::after {
+	-webkit-transform: translateX(-1em);
+	transform: translateX(-1em);
+}
+
+.logo a::before,
+.logo a::after {
+	position: absolute;
+	height: 100%;
+	content: '';
+}
+
+.logo a::before {
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	background: var(--theme);
+}
+
+.logo a::after {
+	left: 100%;
+	z-index: -2;
+	width: 1em;
+    display: inline-block;
+	background: #34495e url(/static/arrow-right.svg) no-repeat 50% 50%;
+	background-size: 60% auto;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	pointer-events: auto;
+}
+
+.logo a:hover::before {
+    background: var(--link-hover-color);
+    transition: all 0.8s ease .15s;
+}
+
+.logo a:hover::after,
+.logo a:focus::after {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+
 
 .logo a img, .logo a svg {
     display: inline;
     vertical-align: middle;
     pointer-events: none;
     transform: translate(0, -10%);
-    border-radius: 6px;
+    border-radius: 12px;
     margin-inline-end: 8px;
 }
 
@@ -74,7 +132,7 @@ body:not(.dark) #sun {
 .lang-switch ul,
 .logo-switches {
     display: inline-flex;
-    margin: auto 4px;
+    margin: auto auto;
 }
 
 .lang-switch {

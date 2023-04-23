@@ -92,3 +92,9 @@ body {
 .nav {
     font-family: "Linux Libertine", "Noto Serif SC", sans-serif;
 }
+
+/* 加粗字体颜色 */
+strong {
+    font-weight: bold;
+    color: #3d6e8d;
+}
