@@ -25,11 +25,11 @@
 
 /* -------------- home 图标hover修改 ---------------- */
 
-.logo {
-	background: rgba(149,165,166,0.4);
+.link-arrow {
+	background: var(--theme);
 }
 
-.logo a {
+.link-arrow a {
 	padding: 0 0.25em;
     font-size: 24px;
     font-weight: 700;
@@ -39,47 +39,51 @@
 	transform: translateX(0);
 }
 
-.logo a:hover,
-.logo a::after {
+.link-arrow a:hover,
+.link-arrow a::after {
 	-webkit-transform: translateX(-1em);
 	transform: translateX(-1em);
 }
 
-.logo a::before,
-.logo a::after {
+.link-arrow a::before,
+.link-arrow a::after {
 	position: absolute;
 	height: 100%;
 	content: '';
 }
 
-.logo a::before {
+.link-arrow a::before {
 	left: 0;
 	z-index: -1;
 	width: 100%;
 	background: var(--theme);
 }
 
-.logo a::after {
+.link-arrow a::after {
 	left: 100%;
 	z-index: -2;
 	width: 1em;
     display: inline-block;
-	background: #34495e url(/static/arrow-right.svg) no-repeat 50% 50%;
+	background: #34495e url("../../arrow-right-white.svg") no-repeat 50% 50% !important;
 	background-size: 60% auto;
 	text-align: center;
 	font-family: Arial, sans-serif;
 	-webkit-transition: -webkit-transform 0.3s;
 	transition: transform 0.3s;
 	pointer-events: auto;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-.logo a:hover::before {
+.link-arrow a:hover::before {
+    color: var(--theme);
     background: var(--link-hover-color);
     transition: all 0.8s ease .15s;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
-.logo a:hover::after,
-.logo a:focus::after {
+.link-arrow a:hover::after {
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
 }
@@ -121,7 +125,42 @@ body:not(.dark) #sun {
 
 #menu a {
     font-size: 16px;
+    font-weight: 500;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
 }
+
+/* 功能等待拓展 */
+
+/* #menu a:hover,
+#menu a:focus {
+	color: #fff;
+}
+
+#menu a::before {
+	position: absolute;
+	top: 0px;
+	left: -5px;
+	z-index: -1;
+	box-sizing: content-box;
+	padding: 0 5px;
+	width: 100%;
+	height: 100%;
+	background: #e74c3c;
+	content: '';
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+	-webkit-transform: skewY(-3deg) skewX(-11deg);
+	transform: skewY(-3deg) skewX(-11deg);
+}
+
+#menu a:hover::before,
+#menu a:focus::before {
+	opacity: 1;
+	-webkit-transform: skewY(0) skewX(0);
+	transform: skewY(0) skewX(0);
+} */
 
 #menu .active {
     font-weight: 500;
