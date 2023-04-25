@@ -1,5 +1,6 @@
 .nav {
     display: flex;
+    margin-top: 6px;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: calc(var(--nav-width) + var(--gap) * 2);
@@ -37,12 +38,15 @@
 	transition: transform 0.3s;
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
+    transition: all 0.8s;
 }
 
 .link-arrow a:hover,
 .link-arrow a::after {
 	-webkit-transform: translateX(-1em);
 	transform: translateX(-1em);
+    color: var(--theme);
+    transition: all 0.8s;
 }
 
 .link-arrow a::before,
@@ -50,6 +54,7 @@
 	position: absolute;
 	height: 100%;
 	content: '';
+    transition: all 0.8s;
 }
 
 .link-arrow a::before {
@@ -57,6 +62,7 @@
 	z-index: -1;
 	width: 100%;
 	background: var(--theme);
+    color:var(--theme)
 }
 
 .link-arrow a::after {
@@ -64,7 +70,7 @@
 	z-index: -2;
 	width: 1em;
     display: inline-block;
-	background: #34495e url("../../arrow-right-white.svg") no-repeat 50% 50% !important;
+	background: #226699 url("../../arrow-right-white.svg") no-repeat 50% 50% !important;
 	background-size: 60% auto;
 	text-align: center;
 	font-family: Arial, sans-serif;
@@ -76,15 +82,17 @@
 }
 
 .link-arrow a:hover::before {
-    color: var(--theme);
+    color: white;
     background: var(--link-hover-color);
-    transition: all 0.8s ease .15s;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
+    box-shadow: -3px 5px 5px grey;
+    transition: all 0.8s ease .15s;
 }
 
 .link-arrow a:hover::after {
 	-webkit-transform: translateX(0);
+    box-shadow: -3px 5px 5px grey;
 	transform: translateX(0);
 }
 

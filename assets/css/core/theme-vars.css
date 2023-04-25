@@ -24,7 +24,8 @@
     --link-hover-underline-shadow: 0 2px 0 var(--link-hover-underline-color);
     --link-transition: all 0.5s ease;
 
-
+    --emphasize-color: #3d6e8d;
+    --element-color: #3d6e8d;
 }
 
 .dark {
