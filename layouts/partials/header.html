@@ -46,7 +46,7 @@
             {{- if site.Title }}
             <section class = "link-arrow">
                 <!-- title="{{ $label_text }} (Alt + H)" -->
-                <a href="{{ "" | absURL }}" accesskey="h" title="">
+                <a href="{{ "" | absURL }}" accesskey="h">
                     {{- if site.Params.label.icon }}
                     {{- $img := resources.Get site.Params.label.icon }}
                     {{- if $img }}

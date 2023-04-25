@@ -39,12 +39,12 @@
     background: var(--element-color) url('../../to-top.svg') no-repeat;
     background-position: center center;
     background-size:60%;
+    box-shadow: 3px 3px 5px rgb(183, 183, 183);
     width: 42px;
     height: 42px;
     padding: 12px;
     border-radius: 64px;
     transition: visibility 0.6s, opacity 0.8s linear;
-    box-shadow: 3px 3px 5px rgb(183, 183, 183);
     transition: all 0.8s;
 }
 
@@ -60,7 +60,6 @@
     background-size:60%;
     box-shadow: 10px 10px 5px grey;
     transition: all 0.8s;
-    
 }
 
 .top-link:focus,

@@ -62,7 +62,9 @@
 	z-index: -1;
 	width: 100%;
 	background: var(--theme);
-    color:var(--theme)
+    color:var(--theme);
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 .link-arrow a::after {
@@ -86,13 +88,13 @@
     background: var(--link-hover-color);
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
-    box-shadow: -3px 5px 5px grey;
+    box-shadow: -3px 5px 12px grey;
     transition: all 0.8s ease .15s;
 }
 
 .link-arrow a:hover::after {
 	-webkit-transform: translateX(0);
-    box-shadow: -3px 5px 5px grey;
+    box-shadow: -3px 5px 12px grey;
 	transform: translateX(0);
 }
 

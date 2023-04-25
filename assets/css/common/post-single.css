@@ -84,7 +84,6 @@
 }
 .post-content a:hover {
 	color: var(--link-hover-underline-color);
-    text-shadow: 2px 2px 30px var(--link-hover-underline-color);
     transition: all 0.6s;
 }
 
